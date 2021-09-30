@@ -1,0 +1,93 @@
+{
+    "filter": {
+        "$match": {
+            "isActive": true
+        }
+    },
+    "datatable": {
+        "columns": [
+            {
+                "data": "trackNumber",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "name",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "description",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "status",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "provider",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "createdAt",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "_id",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            }
+        ],
+        "order": [
+            {
+                "column": 5,
+                "dir": "desc"
+            }
+        ],
+        "start": 0,
+        "length": 25,
+        "search": {
+            "value": "",
+            "regex": false
+        }
+    }
+}

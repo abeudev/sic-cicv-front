@@ -1,0 +1,57 @@
+#genno {
+  .main-nav {
+    &.main-title {
+      .text-header {
+        position: absolute;
+        top: 17px;
+        letter-spacing: 0.5px;
+      }
+      .v-list {
+        width: 80px;
+      }
+    }
+    &.v-toolbar {
+      background-color: inherit;
+      .v-toolbar__content {
+        .v-badge {
+          i {
+            font-size: 25px !important;
+          }
+          .v-badge__badge {
+            width: 19px;
+            height: 19px;
+            font-size: 11px;
+          }
+        }
+        .v-btn--active {
+          &::before {
+            background-color: transparent;
+          }
+          .v-btn__content {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+    &.v-toolbar--fixed {
+      background-color: $wrap-color;
+    }
+  }
+  
+  .logoContainer {
+    img {
+      width: 73%;
+      margin: 0 auto;
+      display: block;
+      padding: 13px;
+    }
+  }
+}
+
+@media only screen and (min-width:768px) {
+  #genno {
+    .main-toolbar {
+      width: 285px
+    }
+  }
+}

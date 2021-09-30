@@ -1,0 +1,14 @@
+#feed {
+  .v-btn--floating .v-btn__content {
+    height: auto !important;
+  }
+  .v-card--reveal {
+    height: 100%; 
+    opacity: 0.9;
+  }
+  .icon-placeholder {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+  }
+}

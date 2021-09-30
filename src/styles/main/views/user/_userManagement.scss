@@ -1,0 +1,10 @@
+.user-image-background {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(110deg, $primary-color-1 60%, $primary-color-2 60%);
+  
+  .v-avatar {
+    display: block;
+    margin: 0 auto;
+  }
+}

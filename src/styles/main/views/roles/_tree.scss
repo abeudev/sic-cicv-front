@@ -1,0 +1,13 @@
+#genno {
+  .g-tree-view {
+    .v-treeview-node__root {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+    .v-chip {
+      .v-chip__content {
+        cursor: pointer;
+      }
+    } 
+  }
+}

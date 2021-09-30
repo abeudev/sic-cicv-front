@@ -1,0 +1,72 @@
+{
+  "name": "genno-frontend",
+  "version": "1.3.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.18.1",
+    "chart.js": "^2.9.3",
+    "core-js": "^2.6.11",
+    "easyinvoice": "^1.0.144",
+    "file-saver": "^2.0.2",
+    "js-cookie": "^2.2.1",
+    "jsonexport": "^3.0.1",
+    "jspdf": "^2.1.1",
+    "jspdf-autotable": "^3.5.12",
+    "lodash": "^4.17.20",
+    "material-design-icons-iconfont": "^3.0.3",
+    "moment-timezone": "^0.5.31",
+    "nprogress": "^0.2.0",
+    "plupload": "^2.3.6",
+    "prismjs": "^1.20.0",
+    "register-service-worker": "^1.7.1",
+    "roboto-fontface": "^0.10.0",
+    "secure-ls": "^1.2.6",
+    "vue": "^2.6.11",
+    "vue-avataaars": "0.0.4",
+    "vue-axios": "^2.1.5",
+    "vue-chartjs": "^3.5.1",
+    "vue-color": "^2.7.1",
+    "vue-cookies": "^1.7.0",
+    "vue-croppie": "^2.0.2",
+    "vue-invoice": "^1.1.4",
+    "vue-loading-overlay": "^3.3.2",
+    "vue-lodash": "^2.1.2",
+    "vue-prism-editor": "^0.6.1",
+    "vue-router": "^3.3.4",
+    "vue-snotify": "^3.2.1",
+    "vue2-animate": "^2.1.3",
+    "vue2-google-maps": "^0.10.7",
+    "vuebar": "0.0.20",
+    "vuedraggable": "^2.23.2",
+    "vuetify": "^1.5.24",
+    "vuex": "^3.4.0",
+    "vuex-persistedstate": "^2.7.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@mdi/font": "^5.3.45",
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-pwa": "^3.12.1",
+    "@vue/cli-service": "^3.12.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue-cli-plugin-vuetify": "^0.5.0",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.5.0"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

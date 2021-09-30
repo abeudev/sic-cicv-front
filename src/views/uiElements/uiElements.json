@@ -1,0 +1,1679 @@
+[
+  {
+    "name": "uiAlert",
+    "path": "alerts",
+    "title": "Alert",
+    "type": "uiElements",
+    "description": "The <code>v-alert</code> component is used to convey important information to the user. It comes in 4 variations, <b>success</b>, <b>info</b>, <b>warning</b> and <b>error</b>. These have default icons assigned which can be changed and represent different actions",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Alerts can have a contextual color and are hidden by default.",
+        "name": "alertUsage",
+        "path": "@/components/uiElements/alerts/usage.vue"
+      },
+      {
+        "title": "Closable",
+        "description": "Using <code>v-model</code>, you can control the state of the Alert. If you dont want to assign a v-model and just display the alert, you can simply assign the prop <code>value</code>",
+        "name": "alertClosable",
+        "path": "@/components/uiElements/alerts/closable.vue"
+      },
+      {
+        "title": "Custom Icon / No Icon",
+        "description": "You can easily assign a custom icon or remove it altogether.",
+        "name": "alertIcon",
+        "path": "@/components/uiElements/alerts/icon.vue"
+      },
+      {
+        "title": "Display transition",
+        "description": "You can apply a custom transition to the show/hide of the alert.",
+        "name": "alertTransition",
+        "path": "@/components/uiElements/alerts/transition.vue"
+      },
+      {
+        "title": "Outline",
+        "description": "Outline alerts inherit their borders from the current color applied.",
+        "name": "alertOutline",
+        "path": "@/components/uiElements/alerts/outline.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiAvatar",
+    "path": "avatars",
+    "title": "Avatar",
+    "type": "uiElements",
+    "description": "The <code>v-avatar</code> component is used to control the size and border radius of responsive images, typically used to show profile pictures.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "The avatar has a dynamic size that can be scaled for any situation. A <b>tile</b> variation is available for displaying an avatar without border radius.",
+        "name": "avatarUsage",
+        "path": "@/components/uiElements/avatars/usage.vue"
+      },
+      {
+        "title": "Advanced usage",
+        "description": "Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.",
+        "name": "avatarAdvanced",
+        "path": "@/components/uiElements/avatars/advanced.vue"
+      },
+      {
+        "title": "Icon and text",
+        "description": "An avatar also accepts the <code>v-icon</code> component or text. Mix and match functionality to create something unique.",
+        "name": "avatarIconAndText",
+        "path": "@/components/uiElements/avatars/iconAndText.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiBadge",
+    "path": "badges",
+    "title": "Badge",
+    "type": "uiElements",
+    "description": "The <code>v-badge</code> component can wrap any type of content to highlight information to a user or to just draw attention to a specific element.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Any element can be used with a badge.",
+        "name": "badgeUsage",
+        "path": "@/components/uiElements/badges/usage.vue"
+      },
+      {
+        "title": "Overlap",
+        "description": "The badge will overlap its content when using the <code>overlap</code> prop.",
+        "name": "badgeOverlap",
+        "path": "@/components/uiElements/badges/overlap.vue"
+      },
+      {
+        "title": "Inline",
+        "description": "Badges can also be placed inline with text.",
+        "name": "badgeInline",
+        "path": "@/components/uiElements/badges/inline.vue"
+      },
+      {
+        "title": "Icon",
+        "description": "The badge can use all of the currently supported icon sets.",
+        "name": "badgeIcon",
+        "path": "@/components/uiElements/badges/icon.vue"
+      },
+      {
+        "title": "Visibility",
+        "description": "The visibility of badges can be controlled using <code>v-model</code>.",
+        "name": "badgeVisibility",
+        "path": "@/components/uiElements/badges/visibility.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiBottomNav",
+    "path": "bottom-navigation",
+    "title": "Bottom Navigation",
+    "type": "uiElements",
+    "description": "The <code>v-bottom-nav</code> is an alternative to the sidebar. It is primarily used on mobile and comes in two variants, icons and text, and shift.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "While the bottom nav is meant to be used with the <code>vue-router</code>, you can also programmatically control the active state of the buttons by using the <code>active.sync</code> prop. You can change a button's value by using its <code>value</code> attribute.",
+        "name": "bottomNavUsage",
+        "path": "@/components/uiElements/bottom-navigation/usage.vue"
+      },
+      {
+        "title": "Color & shift",
+        "description": "When using a colored background, it is recommended to use the <code>light</code> prop. The <code>shift</code> prop will hide the button text until active. Keep in mind, <code>v-btn</code> text is required to be wrapped in a <code><span></code> tag.",
+        "name": "bottomNavColorAndShift",
+        "path": "@/components/uiElements/bottom-navigation/colorAndShift.vue"
+      },
+      {
+        "title": "Toggle",
+        "description": "As with other Vuetify components, you can control the display state with <code>v-model</code>.",
+        "name": "bottomNavToggle",
+        "path": "@/components/uiElements/bottom-navigation/toggle.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiBottomSheet",
+    "path": "bottom-sheets",
+    "title": "Bottom sheets",
+    "type": "uiElements",
+    "description": "The bottom sheet is a modified <code>v-dialog</code> that slides from the bottom of the screen, similar to a <code>v-bottom-nav</code>. Whereas a bottom navigation component is for buttons and specific application level actions, a bottom sheet can contain anything.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Here we display an example list of actions that could be present in an application.",
+        "name": "bottomSheetUsage",
+        "path": "@/components/uiElements/bottom-sheets/usage.vue"
+      },
+      {
+        "title": "Inset bottom sheets",
+        "description": "Bottom sheets can be inset, reducing their maximum width on desktop to 70%. This can be further reduced manually using the <code>width</code> prop. We also showcase dynamic class binding using the Vuetify breakpoint object.",
+        "name": "bottomSheetInset",
+        "path": "@/components/uiElements/bottom-sheets/inset.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiBreadcrumbs",
+    "path": "breadcrumbs",
+    "title": "Breadcrumb",
+    "type": "uiElements",
+    "description": "The <code>v-breadcrumbs</code> component is a navigational helper for pages. It can accept a <b>Material Icons</b> icon or text characters as a divider. An array of objects can be passed to the <b>items</b> property of the component. Additionally, a scoped slot exists for more control of the breadcrumbs, either utilizing <code>v-breadcrumbs-item</code> or other custom markup.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "By default, breadcrumbs use a text divider. This can be any string.",
+        "name": "breadcrumbsUsage",
+        "path": "@/components/uiElements/breadcrumbs/usage.vue"
+      },
+      {
+        "title": "Icon dividers",
+        "description": "For the icon variant, breadcrumbs can use any icon in Material Design Icons.",
+        "name": "breadcrumbsIconDividers",
+        "path": "@/components/uiElements/breadcrumbs/iconDividers.vue"
+      },
+      {
+        "title": "Item slot",
+        "description": "You can use the scoped item slot to customize each breadcrumb.",
+        "name": "breadcrumbsItemSlot",
+        "path": "@/components/uiElements/breadcrumbs/itemSlot.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiButtons",
+    "path": "buttons",
+    "title": "Button",
+    "type": "uiElements",
+    "description": "The <code>v-btn</code> component replaces the standard html button with a material design theme and a multitude of options. Any color helper class can be used to alter the background or text color.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "",
+        "name": "buttonsUsage",
+        "path": "@/components/uiElements/buttons/usage.vue"
+      },
+      {
+        "title": "Flat",
+        "description": "Flat buttons have no box shadow and no background. Only on hover is the container for the button shown.",
+        "name": "buttonsFlat",
+        "path": "@/components/uiElements/buttons/flat.vue"
+      },
+      {
+        "title": "Raised",
+        "description": "Raised buttons have a box shadow that increases when clicked. This is the default style.",
+        "name": "buttonsRaised",
+        "path": "@/components/uiElements/buttons/raised.vue"
+      },
+      {
+        "title": "Depressed",
+        "description": "Depressed buttons still maintain their background color, but have no box shadow.",
+        "name": "buttonsDepressed",
+        "path": "@/components/uiElements/buttons/depressed.vue"
+      },
+      {
+        "title": "Button Dropdown Variants",
+        "description": "Button dropdowns are regular selects with additional styling.",
+        "name": "buttonsDropdown",
+        "path": "@/components/uiElements/buttons/dropdown.vue"
+      },
+      {
+        "title": "Icon",
+        "description": "Icons can be used for the primary content of a button.",
+        "name": "buttonsIcon",
+        "path": "@/components/uiElements/buttons/icon.vue"
+      },
+      {
+        "title": "Floating",
+        "description": "Floating buttons are round and usually contain an icon.",
+        "name": "buttonsFloating",
+        "path": "@/components/uiElements/buttons/floating.vue"
+      },
+      {
+        "title": "Loaders",
+        "description": "Using the loading prop, you can notify a user that there is processing taking place. The default behavior is to use a v-progress-circular component but this can be customized.",
+        "name": "buttonsLoaders",
+        "path": "@/components/uiElements/buttons/loaders.vue"
+      },
+      {
+        "title": "Sizing",
+        "description": "Buttons can be given different sizing options to fit a multitude of scenarios.",
+        "name": "buttonsSizing",
+        "path": "@/components/uiElements/buttons/sizing.vue"
+      },
+      {
+        "title": "Outline",
+        "description": "Outline buttons inherit their borders from the current color applied.",
+        "name": "buttonsOutline",
+        "path": "@/components/uiElements/buttons/outline.vue"
+      },
+      {
+        "title": "Round",
+        "description": "Rounded buttons behave the same as regular buttons but have rounded edges.",
+        "name": "buttonsRound",
+        "path": "@/components/uiElements/buttons/round.vue"
+      },
+      {
+        "title": "Round",
+        "description": "Rounded buttons behave the same as regular buttons but have rounded edges.",
+        "name": "buttonsRound",
+        "path": "@/components/uiElements/buttons/round.vue"
+      },
+      {
+        "title": "Block",
+        "description": "Block buttons extend the full available width.",
+        "name": "buttonsBlock",
+        "path": "@/components/uiElements/buttons/block.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiCard",
+    "path": "cards",
+    "title": "Card",
+    "type": "uiElements",
+    "description": "The <code>v-card</code> component is a versatile component that can be used for anything from a panel to a static image. The <b>card</b> component has numerous helper components to make markup as easy as possible. Components that have no listed options use <b>Vue's</b> functional component option for faster rendering and serve as markup sugar to make building easier.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "A card has 3 basic components, <code>v-card-title</code>, <code>v-card-text</code> and <code>v-card-actions</code>.",
+        "name": "cardUsage",
+        "path": "@/components/uiElements/cards/usage.vue"
+      },
+      {
+        "title": "Media with text",
+        "description": "Using the layout system, we can add custom text anywhere within the background.",
+        "name": "cardMediaWithText",
+        "path": "@/components/uiElements/cards/mediaWithText.vue"
+      },
+      {
+        "title": "Horizontal cards",
+        "description": "Using <code>v-flex</code>, you can create customized horizontal cards. Use the <code>contain</code> property to shrink the <code>v-img</code> to fit inside the container, instead of covering.",
+        "name": "cardHorizontal",
+        "path": "@/components/uiElements/cards/horizontal.vue"
+      },
+      {
+        "title": "Grids",
+        "description": "Using grid lists, you can create beautiful layouts.",
+        "name": "cardGrids",
+        "path": "@/components/uiElements/cards/grids.vue"
+      },
+      {
+        "title": "Custom actions",
+        "description": "With a simple conditional, you can easily add supplementary text that is hidden until opened.",
+        "name": "cardCustomActions",
+        "path": "@/components/uiElements/cards/customActions.vue"
+      },
+      {
+        "title": "Twitter card",
+        "description": "The <code>v-card</code> component has multiple children components that help you build complex examples without having to worry about spacing. This example is comprised of the <code>v-card-title</code>, <code>v-card-text</code> and <code>v-card-actions</code> components.",
+        "name": "cardTwitterCard",
+        "path": "@/components/uiElements/cards/twitterCard.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiChips",
+    "path": "chips",
+    "title": "Chip",
+    "type": "uiElements",
+    "description": "The <code>v-chip</code> component is used to convey small pieces of information. Using the <code>close</code> property, the chip becomes interactive, allowing user interaction.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Chips come in 4 primary variations. Regular, with icon, with portrait and closeable.",
+        "name": "chipUsage",
+        "path": "@/components/uiElements/chips/usage.vue"
+      },
+      {
+        "title": "Colored",
+        "description": "Any color from the Material Design palette can be used to change a chips color.",
+        "name": "chipColored",
+        "path": "@/components/uiElements/chips/colored.vue"
+      },
+      {
+        "title": "Icon",
+        "description": "Chips can use text or any icon available in the Material Icons font library.",
+        "name": "chipIcon",
+        "path": "@/components/uiElements/chips/icon.vue"
+      },
+      {
+        "title": "Outline",
+        "description": "Outlined chips inherit their border color from the current text color.",
+        "name": "chipOutline",
+        "path": "@/components/uiElements/chips/outline.vue"
+      },
+      {
+        "title": "Label",
+        "description": "Label chips use the <code>v-card</code> border-radius.",
+        "name": "chipLabel",
+        "path": "@/components/uiElements/chips/label.vue"
+      },
+      {
+        "title": "Closable",
+        "description": "Closable chips can be controlled with a v-model. Listen to the <code>input</code> event if you want to know when a chip has been closed.",
+        "name": "chipClosable",
+        "path": "@/components/uiElements/chips/closable.vue"
+      },
+      {
+        "title": "In Selects",
+        "description": "Selects can use chips to display the selected data. Try adding your own tags below.",
+        "name": "chipInSelects",
+        "path": "@/components/uiElements/chips/inSelects.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiDialog",
+    "path": "dialogs",
+    "title": "Dialog",
+    "type": "uiElements",
+    "description": "The <code>v-dialog</code> component inform users about a specific task and may contain critical information, require decisions, or involve multiple tasks. Use dialogs sparingly because they are interruptive.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "A dialog contains two slots, one for its activator and one for its content (default). Good for Privacy Policies.",
+        "name": "dialogUsage",
+        "path": "@/components/uiElements/dialogs/usage.vue"
+      },
+      {
+        "title": "Without activator",
+        "description": "If for some reason you are unable to use the activator slot, be sure to add the <code>.stop</code> modifier to the event that triggers the dialog.",
+        "name": "dialogWithoutActivator",
+        "path": "@/components/uiElements/dialogs/withoutActivator.vue"
+      },
+      {
+        "title": "Modal",
+        "description": "Similar to a Simple Dialog, except that it's not dismissed when touching outside.",
+        "name": "dialogModal",
+        "path": "@/components/uiElements/dialogs/modal.vue"
+      },
+      {
+        "title": "Fullscreen",
+        "description": "Due to limited space, full-screen dialogs may be more appropriate for mobile devices than dialogs used on devices with larger screens.",
+        "name": "dialogFullscreen",
+        "path": "@/components/uiElements/dialogs/fullscreen.vue"
+      },
+      {
+        "title": "Form",
+        "description": "Just a simple example of a form in a dialog.",
+        "name": "dialogForm",
+        "path": "@/components/uiElements/dialogs/form.vue"
+      },
+      {
+        "title": "Scrollable",
+        "description": "Example of a dialog with scrollable content.",
+        "name": "dialogScrollable",
+        "path": "@/components/uiElements/dialogs/scrollable.vue"
+      },
+      {
+        "title": "Overflowed",
+        "description": "Modals that do not fit within the available window space will scroll the container.",
+        "name": "dialogOverflowed",
+        "path": "@/components/uiElements/dialogs/overflowed.vue"
+      },
+      {
+        "title": "Advanced",
+        "description": "Choosing an option immediately closes the menu. Touching outside of the dialog, or pressing Back, cancels the action and closes the dialog.",
+        "name": "dialogAdvanced",
+        "path": "@/components/uiElements/dialogs/advanced.vue"
+      },
+      {
+        "title": "Loader",
+        "description": "The <code>v-dialog</code> component makes it easy to create a customized loading experience for your application.",
+        "name": "dialogLoader",
+        "path": "@/components/uiElements/dialogs/loader.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiExpansionPanel",
+    "path": "expansion-panels",
+    "title": "Expansion Panel",
+    "type": "uiElements",
+    "description": "The <code>v-expansion-panel</code> component is useful for reducing vertical space with large amounts of information. The default functionality of the component is to only display one expansion-panel body at a time; however, with the <code>expandable</code> property, the expansion-panel can remain open until explicitly closed.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Accordion expansion-panels can only have 1 panel open at a time.",
+        "name": "expansionPanelUsage",
+        "path": "@/components/uiElements/expansion-panels/usage.vue"
+      },
+      {
+        "title": "Expand",
+        "description": "Expand expansion-panels will stay open until closed. When providing a model, any value not specified will be interpreted as false.",
+        "name": "expansionPanelExpand",
+        "path": "@/components/uiElements/expansion-panels/expand.vue"
+      },
+      {
+        "title": "External control",
+        "description": "Expansion panels can be controlled externally by modifying the <code>v-model</code>. Its value corresponds to a zero-based index of the currently opened expansion panel content. If <code>expand</code> prop is used then it is an array of booleans where the index corresponds to the index of the content.",
+        "name": "expansionPanelExternal",
+        "path": "@/components/uiElements/expansion-panels/external.vue"
+      },
+      {
+        "title": "Disabled and readonly",
+        "description": "Both the expansion-panel and its content supports the <code>disabled</code> and <code>readonly</code> props.",
+        "name": "expansionPanelDisabledAndReadonly",
+        "path": "@/components/uiElements/expansion-panels/disabledAndReadonly.vue"
+      },
+      {
+        "title": "Popout & Inset",
+        "description": "The expansion-panel also has two alternative designs you can activate with the props <code>popout</code> and <code>inset</code>.",
+        "name": "expansionPanelPopout",
+        "path": "@/components/uiElements/expansion-panels/popout.vue"
+      },
+      {
+        "title": "Custom icon",
+        "description": "Expand action icon can be customized with <code>expand-icon</code> prop.",
+        "name": "expansionPanelCustomIcons",
+        "path": "@/components/uiElements/expansion-panels/customIcons.vue"
+      },
+      {
+        "title": "Icon slot",
+        "description": "Expand action icon can be customized using <code>actions</code> slot.",
+        "name": "expansionPanelIconSlot",
+        "path": "@/components/uiElements/expansion-panels/iconSlot.vue"
+      },
+      {
+        "title": "Focusable",
+        "description": "The expansion-panel headers can be made focusable with the prop <code>focusable</code>.",
+        "name": "expansionPanelFocusable",
+        "path": "@/components/uiElements/expansion-panels/focusable.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiGridSystem",
+    "path": "grid",
+    "title": "Grid System",
+    "type": "uiElements",
+    "description": "Vuetify has a 12 point grid system. Built using <kbd>flex-box</kbd>, the grid is used to layout an application's content. It contains 5 types of media breakpoints that are used for targeting specific screen sizes or orientations. The props for grid components are actually classes that are derived from their defined properties. This allows you to easily specify these helper classes as props, while still providing the classes to be used anywhere.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "The <code>v-container</code> can be used for a center focused page, or given the <code>fluid</code> prop to extend its full width. <code>v-layout</code> is used for separating sections and contains the <code>v-flex</code>. The structure of your layout will be as follows, <b>v-container</b> » <b>v-layout</b> » <b>v-flex</b>. Each part of the grid chain is a flex-box element. The final, <code>v-flex</code>, automatically sets its children to have <kbd>flex: 1 1 auto</kbd>. For convenience reasons, these components automatically transform attributes into classes. Allowing you to write <code><v-layout pa-3 mb-2></v-layout></code> instead of <code><v-layout class='pa-3 mb-2'></v-layout></code>. The only exception are <a href='https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes' target='_blank'>data attributes<i class='v-icon mdi mdi-open-in-new' style='font-size: 14px;'></i></a> which are left as-is.",
+        "name": "gridUsage",
+        "path": "@/components/uiElements/grid/usage.vue"
+      },
+      {
+        "title": "Layout playground",
+        "description": "Test the layout props in a simple playground.",
+        "name": "gridPlayground",
+        "path": "@/components/uiElements/grid/playground.vue"
+      },
+      {
+        "title": "Offset",
+        "description": "Offsets are useful for compensating for elements that may not be visible yet, or to control the position of content. Just as with breakpoints, you can set an offset for any available sizes. This allows you to fine tune your application layout precisely to your needs.",
+        "name": "gridOffset",
+        "path": "@/components/uiElements/grid/offset.vue"
+      },
+      {
+        "title": "Order",
+        "description": "You can control the ordering of grid items. As with offsets, you can set different orders for different sizes. Design specialized screen layouts that accommodate to any application.",
+        "name": "gridOrder",
+        "path": "@/components/uiElements/grid/order.vue"
+      },
+      {
+        "title": "Direction and Align",
+        "description": "Designate the direction and alignment in a variety of ways. All of the available <kbd>flex-box</kbd> api is available through intuitive helper props.",
+        "name": "gridDirectionAndAlign",
+        "path": "@/components/uiElements/grid/directionAndAlign.vue"
+      },
+      {
+        "title": "Row and column breakpoints",
+        "description": "Dynamically change your layout based upon resolution. <b>(resize your screen and watch the layout change to a <code>row</code> on small breakpoints)</b>.",
+        "name": "gridRowColumnBreakpoint",
+        "path": "@/components/uiElements/grid/rowColumnBreakpoint.vue"
+      },
+      {
+        "title": "Grow and Shrink",
+        "description": "Flex components can utilize the <code>grow</code> and <code>shrink</code> props to automatically fill available space in a row or shrink to only use the space needed for its contents.",
+        "name": "gridGrowShrink",
+        "path": "@/components/uiElements/grid/growShrink.vue"
+      },
+      {
+        "title": "Nested grid",
+        "description": "Grids can be nested, similar to other frameworks, in order to achieve very custom layouts.",
+        "name": "gridNestedGrid",
+        "path": "@/components/uiElements/grid/nestedGrid.vue"
+      },
+      {
+        "title": "Unique layouts",
+        "description": "The power and flexibility of the Vuetify grid system allows you to create amazing user interfaces.",
+        "name": "gridUniqueLayouts",
+        "path": "@/components/uiElements/grid/uniqueLayouts.vue"
+      },
+      {
+        "title": "v-spacer",
+        "description": "The <code>v-spacer</code> component is useful when you want to fill available space or make space between two components.",
+        "name": "gridSpacer",
+        "path": "@/components/uiElements/grid/spacer.vue"
+      },
+      {
+        "title": "Html tags",
+        "description": "Sometimes you will want to specify a layout item as a specific tag, such as a <code>section</code> or <code>li</code> element.",
+        "name": "gridTags",
+        "path": "@/components/uiElements/grid/tags.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiFab",
+    "path": "floating-action-buttons",
+    "title": "Floating Action Buttons",
+    "type": "uiElements",
+    "description": "The <code>v-btn</code> component can be used as a Floating action button. This provides an application a main point of action. Combined with the <code>v-speed-dial</code> component, you can create a diverse set of functions available for your users.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Floating action buttons can be attached to material to signify a promoted action in your application. The default size will be used in most cases, whereas the <code>small</code> variant can be used to maintain continuity with similar sized elements.",
+        "name": "fabUsage",
+        "path": "@/components/uiElements/floating-action-buttons/usage.vue"
+      },
+      {
+        "title": "Small variant",
+        "description": "For better visual appeal, we use a small button to match our list avatars.",
+        "name": "fabSmall",
+        "path": "@/components/uiElements/floating-action-buttons/small.vue"
+      },
+      {
+        "title": "Display animation",
+        "description": "When displaying for the first time, a floating action button should animate onto the screen. Here we use the <code>v-fab-transition</code> with v-show. You can also use any custom transition provided by Vuetify or your own.",
+        "name": "fabDisplayAnimation",
+        "path": "@/components/uiElements/floating-action-buttons/displayAnimation.vue"
+      },
+      {
+        "title": "Lateral screens",
+        "description": "When changing the default action of your button, it is recommended that you display a transition to signify a change. We do this by binding the <code>key</code> prop to a piece of data that can properly signal a change in action to the Vue transition system. While you can use a custom transition for this, ensure that you set the <code>mode</code> prop to <b>out-in</b>.",
+        "name": "fabLateralScreens",
+        "path": "@/components/uiElements/floating-action-buttons/lateralScreens.vue"
+      },
+      {
+        "title": "FAB with speed-dial",
+        "description": "The speed-dial component has an very robust api for customizing your FAB experience exactly how you want.",
+        "name": "fabSpeedDial",
+        "path": "@/components/uiElements/floating-action-buttons/speedDial.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiHover",
+    "path": "hover",
+    "title": "Hover",
+    "type": "uiElements",
+    "description": "The <code>v-hover</code> component provides a clean interface for handling hover states for any component.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Easily change the elevation of a card.",
+        "name": "hoverUsage",
+        "path": "@/components/uiElements/hover/usage.vue"
+      },
+      {
+        "title": "Transitions",
+        "description": "Create highly customized components that respond to user interaction.",
+        "name": "hoverTransition",
+        "path": "@/components/uiElements/hover/transition.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiIcon",
+    "path": "icons",
+    "title": "Icon",
+    "type": "uiElements",
+    "description": "The <code>v-icon</code> component provides a large set of glyphs to provide context to various aspects of your application. Vuetify icons utilize Google's Material Icons font library. For a list of all available icons, visit the official <a href='https://material.io/icons/' target='_blank'>Material Icons <i class='v-icon mdi mdi-open-in-new' style='font-size: 14px;'></i></a> page.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Icons come in two themes (light and dark), and four different sizes (standard, medium, large, and x-large).",
+        "name": "iconUsage",
+        "path": "@/components/uiElements/icons/usage.vue"
+      },
+      {
+        "title": "Color",
+        "description": "Using color helpers you can change the color of an icon from the standard dark and light themes.",
+        "name": "iconColor",
+        "path": "@/components/uiElements/icons/color.vue"
+      },
+      {
+        "title": "Buttons",
+        "description": "Icons can be used inside of buttons to add emphasis to the action.",
+        "name": "iconButtons",
+        "path": "@/components/uiElements/icons/buttons.vue"
+      },
+      {
+        "title": "Clickable",
+        "description": "Binding any click event to <code>v-icon</code> will automatically change the cursor to a pointer.",
+        "name": "iconClickable",
+        "path": "@/components/uiElements/icons/clickable.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiList",
+    "path": "lists",
+    "title": "List",
+    "type": "uiElements",
+    "description": "The <code>v-list</code> component is used to display information. It can contain an avatar, content, actions, subheaders and much more. Lists can contain children and are used in the sidebar.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Lists can take an array of list items. When given an array, the list component will figure out the classes that are needed depending on what it was given. You can also define headers or dividers within the items array.",
+        "name": "listUsage",
+        "path": "@/components/uiElements/lists/usage.vue"
+      },
+      {
+        "title": "Avatar with title and action",
+        "description": "Lists also contain slots for a more explicit approach. If you choose this approach, remember you must provide additional props for correct spacing. In this example, we have a tile with an avatar, so we must provide an <code>avatar</code> property.",
+        "name": "listAvatarTitleAndAction",
+        "path": "@/components/uiElements/lists/avatarTitleAndAction.vue"
+      },
+      {
+        "title": "Icon with 2 lines and action",
+        "description": "Lists can contain subheaders, dividers, and can contain 1 or more lines. The subtitle will overflow with ellipsis if it extends past one line.",
+        "name": "listIconTwoLinesAndAction",
+        "path": "@/components/uiElements/lists/iconTwoLinesAndAction.vue"
+      },
+      {
+        "title": "Avatar with 3 lines",
+        "description": "For three line lists, the subtitle will clamp vertically at 2 lines and then ellipsis. If you need more than 3 lines, it is advised to use a card.",
+        "name": "listAvatarThreeLines",
+        "path": "@/components/uiElements/lists/avatarThreeLines.vue"
+      },
+      {
+        "title": "Avatar with title and action",
+        "description": "When a lists slot is used, you must manually define whether it contains headers, or if the items contain an avatar. This is required to maintain proper spacing.",
+        "name": "listAvatarSubheaderTitleAndAction",
+        "path": "@/components/uiElements/lists/avatarSubheaderTitleAndAction.vue"
+      },
+      {
+        "title": "Subheadings and dividers",
+        "description": "Lists can contain multiple subheaders and dividers.",
+        "name": "listSubheadingsAndDividers",
+        "path": "@/components/uiElements/lists/subheadingsAndDividers.vue"
+      },
+      {
+        "title": "Card image with toolbar and list",
+        "description": "A list can be combined with a card.",
+        "name": "listCardList",
+        "path": "@/components/uiElements/lists/cardList.vue"
+      },
+      {
+        "title": "Title with sub-title, actions and action-text",
+        "description": "A list can contain a stack within an action. Ripple and router props can be passed through the main v-list, to the v-list-tile or as a property in the items array.",
+        "name": "listTitleSubtitleActionsAndActionText",
+        "path": "@/components/uiElements/lists/titleSubtitleActionsAndActionText.vue"
+      },
+      {
+        "title": "Action with title and sub-title",
+        "description": "A list can contain up to 3 lines.",
+        "name": "listActionTitleAndSubtitle",
+        "path": "@/components/uiElements/lists/actionTitleAndSubtitle.vue"
+      },
+      {
+        "title": "Expansion Lists",
+        "description": "A list can contain a group of items which will display on click. Expansion lists are also used within the <code>v-navigation-drawer</code> component.",
+        "name": "listExpansionLists",
+        "path": "@/components/uiElements/lists/expansionLists.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiMenu",
+    "path": "menus",
+    "title": "Menu",
+    "type": "uiElements",
+    "description": "The <code>v-menu</code> component shows a menu at the position of the element used to activate it.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Remember to put the element that activates the menu in the <code>activator</code> slot.",
+        "name": "menuUsage",
+        "path": "@/components/uiElements/menus/usage.vue"
+      },
+      {
+        "title": "Absolute position",
+        "description": "Menus can also be placed absolutely on top of the activator element using the <code>absolute</code> prop. Try clicking anywhere on the image.",
+        "name": "menuAbsolute",
+        "path": "@/components/uiElements/menus/absolute.vue"
+      },
+      {
+        "title": "Menu with activator and tooltip",
+        "description": "With the new <code>v-slot</code> syntax, nested activators such as those seen with a <code>v-menu</code> and <code>v-tooltip</code> attached to the same activator button, need a particular setup in order to function correctly. <b>Note: this same syntax is used for other nested activators such as</b> <code>v-dialog</code> <b>w/</b> <code>v-tooltip</code>.",
+        "name": "menuActivatorTooltip",
+        "path": "@/components/uiElements/menus/menuActivatorTooltip.vue"
+      },
+      {
+        "title": "Hover",
+        "description": "Menus can be accessed using hover instead of clicking with the <code>open-on-hover</code> prop.",
+        "name": "menuHover",
+        "path": "@/components/uiElements/menus/hover.vue"
+      },
+      {
+        "title": "Menus",
+        "description": "Menus can be placed within almost any component.",
+        "name": "menuMenus",
+        "path": "@/components/uiElements/menus/menus.vue"
+      },
+      {
+        "title": "Custom transitions",
+        "description": "Vuetify comes with 3 standard transitions, scale, slide-x and slide-y.",
+        "name": "menuCustomTransition",
+        "path": "@/components/uiElements/menus/customTransition.vue"
+      },
+      {
+        "title": "Popover menu",
+        "description": "A menu can be configured to be static when opened, allowing it to function as a popover. This can be useful when there are multiple interactive items within the menu contents.",
+        "name": "menuPopover",
+        "path": "@/components/uiElements/menus/popover.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiProgress",
+    "path": "progress",
+    "title": "Progress",
+    "type": "uiElements",
+    "description": "The <code>v-progress-circular</code> and <code>v-progress-linear</code> components are used to convey data visually to users. They can also represent an indeterminate amount, such as loading or processing. The circular progress component contains a slot that is centered within the circle.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "By default, progress circular uses the applications secondary color.",
+        "name": "progressUsage",
+        "path": "@/components/uiElements/progress/usage.vue"
+      },
+      {
+        "title": "Colored",
+        "description": "Alternate colors can be applied.",
+        "name": "progressCircularColored",
+        "path": "@/components/uiElements/progress/circularColored.vue"
+      },
+      {
+        "title": "Indeterminate",
+        "description": "An indeterminate progress circular animates forever.",
+        "name": "progressCircularIndeterminate",
+        "path": "@/components/uiElements/progress/circularIndeterminate.vue"
+      },
+      {
+        "title": "Size & Width",
+        "description": "The progress circular component can have an altered width and size.",
+        "name": "progressCircularSizeAndWidth",
+        "path": "@/components/uiElements/progress/circularSizeAndWidth.vue"
+      },
+      {
+        "title": "Rotate",
+        "description": "The progress origin can be rotated.",
+        "name": "progressCircularRotate",
+        "path": "@/components/uiElements/progress/circularRotate.vue"
+      },
+      {
+        "title": "Determinate",
+        "description": "The progress linear component can have a determinate state modified by <code>v-model</code>.",
+        "name": "progressLinearDeterminate",
+        "path": "@/components/uiElements/progress/linearDeterminate.vue"
+      },
+      {
+        "title": "Indeterminate",
+        "description": "Just as with the progress circular component, progress linear has an indeterminate state.",
+        "name": "progressLinearIndeterminate",
+        "path": "@/components/uiElements/progress/linearIndeterminate.vue"
+      },
+      {
+        "title": "Custom height and contextual colors",
+        "description": "A custom height or contextual color can be applied to a progress bar. The bars primary color is your applications primary color.",
+        "name": "progressLinearCustomHeightAndContextualColors",
+        "path": "@/components/uiElements/progress/linearCustomHeightAndContextualColors.vue"
+      },
+      {
+        "title": "Indeterminate",
+        "description": "You can also set the color using the props <code>color</code> and <code>background-color</code>.",
+        "name": "progressLinearCustomColors",
+        "path": "@/components/uiElements/progress/linearCustomColors.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiRating",
+    "path": "ratings",
+    "title": "Ratings",
+    "type": "uiElements",
+    "description": "The rating component is a specialized but crucial piece in building user widgets. Collecting user feedback via ratings is a simple analytic that can provide a lot of feedback to your product or application.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "The <code>v-rating</code> component provides a simple interface for gathering user feedback.",
+        "name": "ratingUsage",
+        "path": "@/components/uiElements/ratings/usage.vue"
+      },
+      {
+        "title": "Size variants",
+        "description": "Utilize the same sizing classes available in <code>v-icon</code> or provide your own with the <b>size</b> prop.",
+        "name": "ratingSizes",
+        "path": "@/components/uiElements/ratings/sizes.vue"
+      },
+      {
+        "title": "Custom length",
+        "description": "Sometimes an application will call for a customized implementation. Easily change length or displayed icons.",
+        "name": "ratingLength",
+        "path": "@/components/uiElements/ratings/length.vue"
+      },
+      {
+        "title": "Incremented",
+        "description": "A rating can have 3 defined icons, <b>full-icon</b>, <b>half-icon</b> (with the <b>half-increments</b> prop) and <b>empty-icon</b>.",
+        "name": "ratingIncrements",
+        "path": "@/components/uiElements/ratings/increments.vue"
+      },
+      {
+        "title": "Scoped slots",
+        "description": "A scoped slot is provided to give you even more freedom in how you display the rating.",
+        "name": "ratingSlots",
+        "path": "@/components/uiElements/ratings/slots.vue"
+      },
+      {
+        "title": "Card ratings",
+        "description": "The rating component pairs well with products allowing you to gather and display customer feedback.",
+        "name": "ratingCard",
+        "path": "@/components/uiElements/ratings/card.vue"
+      },
+      {
+        "title": "Advanced usage",
+        "description": "The <code>v-rating</code> component fits right in with existing components. Build truly complex examples with rich features and beautiful designs.",
+        "name": "ratingAdvanced",
+        "path": "@/components/uiElements/ratings/advanced.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiSnackbar",
+    "path": "snackbars",
+    "title": "Snackbar",
+    "type": "uiElements",
+    "description": "The <code>v-snackbar</code> component is used to display a quick message to a user. Snackbars support positioning, removal delay and callbacks.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "The standard snackbar is useful for calling attention to some function that has just happened.",
+        "name": "snackbarUsage",
+        "path": "@/components/uiElements/snackbars/usage.vue"
+      },
+      {
+        "title": "Contextual",
+        "description": "You can also apply a color to the snackbar to better fit your implementation.",
+        "name": "snackbarContextual",
+        "path": "@/components/uiElements/snackbars/contextual.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiTab",
+    "path": "tabs",
+    "title": "Tab",
+    "type": "uiElements",
+    "description": "The <code>v-tabs</code> component is used for hiding content behind a selectable item. This can also be used as a pseudo-navigation for a page, where the tabs are links and the tab-items are the content.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Basic Usage",
+        "name": "tabUsage",
+        "path": "@/components/uiElements/tabs/usage.vue"
+      },
+      {
+        "title": "Fixed Tabs",
+        "description": "The <b>fixed-tabs</b> prop sets a higher minimum width and applies a new maximum width to <code>v-tabs-items</code>. On desktop screens, the tab items will be centered within the <code>v-tabs</code> component and switch to evenly fill on mobile.",
+        "name": "tabFixedTabs",
+        "path": "@/components/uiElements/tabs/fixedTabs.vue"
+      },
+      {
+        "title": "Right aligned tabs",
+        "description": "The <b>right</b> prop aligns the tabs to the right",
+        "name": "tabRight",
+        "path": "@/components/uiElements/tabs/right.vue"
+      },
+      {
+        "title": "Content",
+        "description": "Tabs are not the only thing you can put inside the <code>v-tabs</code> component. In this example we've also added a toolbar.",
+        "name": "tabContent",
+        "path": "@/components/uiElements/tabs/content.vue"
+      },
+      {
+        "title": "With search",
+        "description": "Here is another example of additional content inside the <code>v-tabs</code> component.",
+        "name": "tabSearch",
+        "path": "@/components/uiElements/tabs/search.vue"
+      },
+      {
+        "title": "Icons and text",
+        "description": "By using the <b>icons-and-text</b> prop you can add icons to each tab item.",
+        "name": "tabIconsAndText",
+        "path": "@/components/uiElements/tabs/iconsAndText.vue"
+      },
+      {
+        "title": "Desktop tabs",
+        "description": "",
+        "name": "tabDesktop",
+        "path": "@/components/uiElements/tabs/desktop.vue"
+      },
+      {
+        "title": "Align tabs with toolbar title",
+        "description": "Make <code>v-tabs</code> lined up with the <code>v-toolbar-title</code> component (<code>v-toolbar-side-icon</code> or <code>v-btn</code> must be used in <code>v-toolbar</code>). May not work if the tab text is wrapped.",
+        "name": "tabAlignWithTitle",
+        "path": "@/components/uiElements/tabs/alignWithTitle.vue"
+      },
+      {
+        "title": "Grow",
+        "description": "The <b>grow</b> prop will make the tab items take up all available space.",
+        "name": "tabGrow",
+        "path": "@/components/uiElements/tabs/grow.vue"
+      },
+      {
+        "title": "With menu",
+        "description": "You can use a menu to hold additional tabs, swapping them out on the fly.",
+        "name": "tabOverflowToMenu",
+        "path": "@/components/uiElements/tabs/overflowToMenu.vue"
+      },
+      {
+        "title": "Pagination",
+        "description": "If the tab items overflow their container, pagination controls will appear.",
+        "name": "tabPagination",
+        "path": "@/components/uiElements/tabs/pagination.vue"
+      },
+      {
+        "title": "Custom icons",
+        "description": "<b>prev-icon</b> and <b>next-icon</b> can be used for applying custom pagination icons.",
+        "name": "tabIcons",
+        "path": "@/components/uiElements/tabs/icons.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiTimeline",
+    "path": "timelines",
+    "title": "Timeline",
+    "type": "uiElements",
+    "description": "The <code>v-timeline</code> is useful for stylistically displaying chronological information.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "",
+        "name": "timelineUsage",
+        "path": "@/components/uiElements/timelines/usage.vue"
+      },
+      {
+        "title": "Small dots",
+        "description": "Easily alternate styles to provide a unique design.",
+        "name": "timelineSmall",
+        "path": "@/components/uiElements/timelines/small.vue"
+      },
+      {
+        "title": "Icon dots",
+        "description": "Conditionally use icons within the <code>v-timeline-item</code>'s dot to provide additional context.",
+        "name": "timelineIcons",
+        "path": "@/components/uiElements/timelines/icons.vue"
+      },
+      {
+        "title": "Avatar dots",
+        "description": "Insert avatars into dots with use of icon <code>slot</code> and <code>v-avatar</code>.",
+        "name": "timelineAvatars",
+        "path": "@/components/uiElements/timelines/avatars.vue"
+      },
+      {
+        "title": "Colored dots",
+        "description": "Colors dots create visual breakpoints that make your timelines easier to read.",
+        "name": "timelineColor",
+        "path": "@/components/uiElements/timelines/color.vue"
+      },
+      {
+        "title": "Opposite dots",
+        "description": "The <b>opposite</b> slot provides an additional layer of customization within your timelines.",
+        "name": "timelineSlot",
+        "path": "@/components/uiElements/timelines/slot.vue"
+      },
+      {
+        "title": "Dense alert",
+        "description": "Dense timelines position all content to the right. In this example, <code>v-alert</code> replaces the card to provide a different design.",
+        "name": "timelineAlert",
+        "path": "@/components/uiElements/timelines/alert.vue"
+      },
+      {
+        "title": "Advanced",
+        "description": "Modular components allow you to create highly customized solutions that just work.",
+        "name": "timelineAdvanced",
+        "path": "@/components/uiElements/timelines/advanced.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiToolbar",
+    "path": "toolbars",
+    "title": "Toolbar",
+    "type": "uiElements",
+    "description": "The <code>v-toolbar</code> component is pivotal to any gui, as it generally is the primary source of site navigation. The toolbar component works great in conjunction with a navigation drawer for hiding links and presenting an activator to open the sidebar on mobile.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "A toolbar is a flexible container that can be utilized in a number of ways. By default, the toolbar is 64px high on desktop, 56px high on mobile portrait and 48px high on mobile landscape. There are a number of helper components available to use with the toolbar. These are <code>v-toolbar-side-icon</code>, <code>v-toolbar-title</code> and <code>v-toolbar-items</code>.",
+        "name": "toolbarUsage",
+        "path": "@/components/uiElements/toolbars/usage.vue"
+      },
+      {
+        "title": "App bar",
+        "description": "An App bar is the primary toolbar of your application. It can contain icons, menus and more.",
+        "name": "toolbarAppBar",
+        "path": "@/components/uiElements/toolbars/appBar.vue"
+      },
+      {
+        "title": "App bar with items",
+        "description": "Utilizing the <code>v-toolbar-items</code> component you can use regular <code>v-btn</code> components to create app bar items. Don't forget to apply the <code>flat</code> prop to each button.",
+        "name": "toolbarAppBarItems",
+        "path": "@/components/uiElements/toolbars/appBarItems.vue"
+      },
+      {
+        "title": "App bar with extension",
+        "description": "An extension can be used that creates a much more prominent bar. If a title is placed within the extension, it will automatically be shifted to the right to match the normal location it would be at in the main bar.",
+        "name": "toolbarAppBarExtension",
+        "path": "@/components/uiElements/toolbars/appBarExtension.vue"
+      },
+      {
+        "title": "Column width with hierarchy",
+        "description": "Toolbars come in 2 variants, light and dark. Light toolbars have dark tinted buttons and dark text whereas Dark toolbars have white tinted buttons and white text.",
+        "name": "toolbarColumnWidthWithHierarchy",
+        "path": "@/components/uiElements/toolbars/columnWidthWithHierarchy.vue"
+      },
+      {
+        "title": "Flexible toolbar and card toolbar",
+        "description": "With a few custom styles, you can easily create your amazing user interfaces.",
+        "name": "toolbarFlexibleAndCard",
+        "path": "@/components/uiElements/toolbars/flexibleAndCard.vue"
+      },
+      {
+        "title": "Floating with search",
+        "description": "A floating toolbar can be placed over the content that it references.",
+        "name": "toolbarFloatingWithSearch",
+        "path": "@/components/uiElements/toolbars/floatingWithSearch.vue"
+      },
+      {
+        "title": "Variations",
+        "description": "An app-bar has multiple variations that can be applied with themes and helper classes. These range from light and dark themes, colored and transparent.",
+        "name": "toolbarVariations",
+        "path": "@/components/uiElements/toolbars/variations.vue"
+      },
+      {
+        "title": "Prominent toolbars",
+        "description": "Prominent toolbars add a slot where you can placed elements in the extended area. The content and extension areas will be locked to 64px in height.",
+        "name": "toolbarProminent",
+        "path": "@/components/uiElements/toolbars/prominent.vue"
+      },
+      {
+        "title": "Dense toolbars",
+        "description": "Dense toolbars reduce their height to 48px. This is also the default behavior for mobile landscape orientation.",
+        "name": "toolbarDense",
+        "path": "@/components/uiElements/toolbars/dense.vue"
+      },
+      {
+        "title": "Scrolling techniques",
+        "description": "A toolbar can transition off screen when scrolling. Here we demonstrate how you can specify the scroll target (default is window). Keep in mind, for this example there is special markup that will not be required in your application.",
+        "name": "toolbarScrolling",
+        "path": "@/components/uiElements/toolbars/scrolling.vue"
+      },
+      {
+        "title": "App bar with menu",
+        "description": "You can add menu components to a toolbar.",
+        "name": "toolbarAppBarMenu",
+        "path": "@/components/uiElements/toolbars/appBarMenu.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiTooltip",
+    "path": "tooltips",
+    "title": "Tooltip",
+    "type": "uiElements",
+    "description": "The <code>v-tooltip</code> component is useful for conveying information when a user hovers over an element. You can also programmatically control the display of tooltips through a <b>v-model</b>.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Tooltips can wrap any element.",
+        "name": "tooltipUsage",
+        "path": "@/components/uiElements/tooltips/usage.vue"
+      },
+      {
+        "title": "Alignment",
+        "description": "Tooltip can be aligned to any of the four sides of the activator element.",
+        "name": "tooltipAlignment",
+        "path": "@/components/uiElements/tooltips/alignment.vue"
+      },
+      {
+        "title": "Visibility",
+        "description": "Tooltip visibility can be programmatically changed using <code>v-model</code>.",
+        "name": "tooltipVisibility",
+        "path": "@/components/uiElements/tooltips/visibility.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiTreeview",
+    "path": "treeview",
+    "title": "Treeview",
+    "type": "uiElements",
+    "description": "The <code>v-treeview</code> component is useful for displaying large amounts of nested data.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "A basic example.",
+        "name": "treeviewUsage",
+        "path": "@/components/uiElements/treeview/usage.vue"
+      },
+      {
+        "title": "Searching a directory",
+        "description": "Easily filter your treeview by using the <b>search</b> prop. You can easily apply your custom filtering function if you need case-sensitive or fuzzy filtering by setting the <b>filter</b> prop",
+        "name": "treeviewHumanResources",
+        "path": "@/components/uiElements/treeview/humanResources.vue"
+      },
+      {
+        "title": "Scoped slots",
+        "description": "Using scoped slots we are able to create an intuitive file explorer. Apart from the <code>prepend</code> slot, there is also one for the <code>label</code>, and an <code>append</code> slot.",
+        "name": "treeviewFileExplorer",
+        "path": "@/components/uiElements/treeview/fileExplorer.vue"
+      },
+      {
+        "title": "Async items",
+        "description": "You can dynamically load child data by supplying a Promise callback to the <code>load-children</code> prop. This callback will be executed the first time a user tries to expand an item that has a children property that is an empty array.",
+        "name": "treeviewDirectory",
+        "path": "@/components/uiElements/treeview/directory.vue"
+      },
+      {
+        "title": "Custom selectable icons",
+        "description": "Customize the <b>on</b>, <b>off</b> and <b>indeterminate</b> icons for your selectable tree. Combine with other advanced functionality like API loaded items.",
+        "name": "treeviewHotspots",
+        "path": "@/components/uiElements/treeview/hotspots.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiAutocomplete",
+    "path": "autocompletes",
+    "title": "Autocomplete",
+    "type": "formElements",
+    "description": "The <code>v-autocomplete</code> component offers simple and flexible type-ahead functionality. This is useful when searching large sets of data or even dynamically requesting information from an API.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "The autocomplete component extends <code>v-select</code> and adds the ability to filter items.",
+        "name": "autocompleteUsage",
+        "path": "@/components/uiElements/autocompletes/usage.vue"
+      },
+      {
+        "title": "Searching an API",
+        "description": "Easily hook up dynamic data and create a unique experience. The <code>v-autocomplete</code>'s expansive prop list makes it easy to fine tune every aspect of the input.",
+        "name": "autocompleteApi",
+        "path": "@/components/uiElements/autocompletes/api.vue"
+      },
+      {
+        "title": "Scoped slots",
+        "description": "With the power of scoped slots, you can customize the visual output of the select. In this example we add a profile picture for both the chips and list items.",
+        "name": "autocompleteScopedSlots",
+        "path": "@/components/uiElements/autocompletes/scopedSlots.vue"
+      },
+      {
+        "title": "Custom filter on autocomplete",
+        "description": "The <code>filter</code> prop can be used to filter each individual item with custom logic. In this example we filter items by name.",
+        "name": "autocompleteCustomFilter",
+        "path": "@/components/uiElements/autocompletes/customFilter.vue"
+      },
+      {
+        "title": "Asynchronous items",
+        "description": "Sometimes you need to load data externally based upon a search query. Use the <code>search-input</code> prop with the <b>.sync</b> modifier when using the <code>autocomplete</code> prop. We also make use of the new <code>cache-items</code> prop. This will keep a unique list of all items that have been passed to the <code>items</code> prop and is <b>REQUIRED</b> when using asynchronous items and the <b>multiple</b> prop.",
+        "name": "autocompleteAsynchronous",
+        "path": "@/components/uiElements/autocompletes/asynchronous.vue"
+      },
+      {
+        "title": "Advanced slots",
+        "description": "The <code>v-autocomplete</code> component is extremely flexible and can fit in just about any use-case. Create custom displays for <b>no-data</b>, <b>item</b> and <b>selection</b> slots to provide a unique user experience. Using scoped slots enables you to easily customize the desired look for your application.",
+        "name": "autocompleteAdvanced",
+        "path": "@/components/uiElements/autocompletes/advanced.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiCombobox",
+    "path": "combobox",
+    "title": "Combobox",
+    "type": "formElements",
+    "description": "The <code>v-combobox</code> component.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "With Combobox, you can allow a user to create new values that may not be present in a provided items list.",
+        "name": "comboboxUsage",
+        "path": "@/components/uiElements/combobox/usage.vue"
+      },
+      {
+        "title": "No data with chips",
+        "description": "In this example we utilize a custom <b>no-data</b> slot to provide context to the user when searching / creating items.",
+        "name": "comboboxNoData",
+        "path": "@/components/uiElements/combobox/noData.vue"
+      },
+      {
+        "title": "Advanced custom option",
+        "description": "The <code>v-combobox</code> improves upon the added functionality from <code>v-select</code> and <code>v-autocomplete</code>. This provides you with an expansive interface to create truly customized implementations. This example takes advantage of some more advanced features such as a custom <b>filter</b> algorithm, inline list editing and dynamic input items.",
+        "name": "comboboxAdvanced",
+        "path": "@/components/uiElements/combobox/advanced.vue"
+      },
+      {
+        "title": "Multiple combobox",
+        "description": "Previously known as <b>tags</b> - user is allowed to enter more than 1 value",
+        "name": "comboboxComboboxMultiple",
+        "path": "@/components/uiElements/combobox/comboboxMultiple.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiForm",
+    "path": "forms",
+    "title": "Form",
+    "type": "formElements",
+    "description": "When it comes to form validation, Vuetify has a multitude of integrations and baked in functionality.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "The internal <code>v-form</code> component makes it easy to add validation to form inputs. All input components have a <code>rules</code> prop which takes an array of functions. These functions allow you to specify conditions in which the field is <i>valid</i> or <i>invalid</i>. Whenever the value of an input is changed, each function in the array will receive the new value. If a function returns false or a string, validation has failed.",
+        "name": "formsUsage",
+        "path": "@/components/uiElements/forms/usage.vue"
+      },
+      {
+        "title": "Creating rules",
+        "description": "Rules allow you to apply custom validation on all form components. These are validated sequentially and will display a <b>maximum</b> of 1 error at a time, so make sure you order your rules accordingly.",
+        "name": "formsRules",
+        "path": "@/components/uiElements/forms/rules.vue"
+      },
+      {
+        "title": "Validation with submit & clear",
+        "description": "The <code>v-form</code> component has <b>three</b> functions that can be accessed by setting a ref on the component. A ref allows us to access internal methods on a component, for example, <code><v-form ref='form'></code>. <b>this.$refs.form.validate()</b> will validate all inputs and return if they are all valid or not. <b>this.$refs.form.reset()</b> will clear all inputs and reset their validation errors. <b>this.$refs.form.resetValidation()</b> will only reset input validation and not alter their state.",
+        "name": "formsValidationWithSubmitAndClear",
+        "path": "@/components/uiElements/forms/validationWithSubmitAndClear.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiSelect",
+    "path": "selects",
+    "title": "Select",
+    "type": "formElements",
+    "description": "Select fields components are used for collecting user provided information from a list of options.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "",
+        "name": "selectsUsage",
+        "path": "@/components/uiElements/selects/usage.vue"
+      },
+      {
+        "title": "Light theme",
+        "description": "A standard single select has a multitude of configuration options.",
+        "name": "selectsLight",
+        "path": "@/components/uiElements/selects/light.vue"
+      },
+      {
+        "title": "Icons",
+        "description": "Use a custom prepended or appended icon.",
+        "name": "selectsIcons",
+        "path": "@/components/uiElements/selects/icons.vue"
+      },
+      {
+        "title": "Multiple",
+        "description": "A multi-select can utilize <code>v-chip</code> as the display for selected items.",
+        "name": "selectsMultiple",
+        "path": "@/components/uiElements/selects/multiple.vue"
+      },
+      {
+        "title": "Customized item text and value",
+        "description": "You can specify the specific properties within your items array correspond to the text and value fields. By default, this is <b>text</b> and <b>value</b>. In this example we also use the <code>return-object</code> prop which will return the entire object of the selected item on selection.",
+        "name": "selectsCustomTextAndValue",
+        "path": "@/components/uiElements/selects/customTextAndValue.vue"
+      },
+      {
+        "title": "Prepend/Append item slots",
+        "description": "The <code>v-select</code> components can be optionally expanded with prepended and appended items. This is perfect for customized <b>select-all</b> functionality.",
+        "name": "selectsSlots",
+        "path": "@/components/uiElements/selects/slots.vue"
+      },
+      {
+        "title": "Change selection appearance",
+        "description": "The <code>selection</code> scoped slot can be used to customize the way selected values are shown in the input. This is great when you want something like <code>foo (+20 others)</code> or don't want the selection to occupy multiple lines.",
+        "name": "selectsSelectionAppearance",
+        "path": "@/components/uiElements/selects/selectionAppearance.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiSelectionControl",
+    "path": "selection-controls",
+    "title": "Selection Control",
+    "type": "formElements",
+    "description": "Selection control components allow a user to select options. These components <b>must</b> be used with the <code>v-model</code> prop as they do not maintain their own state.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "",
+        "name": "selectionControlUsage",
+        "path": "@/components/uiElements/selection-controls/usage.vue"
+      },
+      {
+        "title": "Checkboxes - Boolean",
+        "description": "",
+        "name": "selectionControlCheckboxesBoolean",
+        "path": "@/components/uiElements/selection-controls/checkboxesBoolean.vue"
+      },
+      {
+        "title": "Checkboxes - Array",
+        "description": "",
+        "name": "selectionControlCheckboxesArray",
+        "path": "@/components/uiElements/selection-controls/checkboxesArray.vue"
+      },
+      {
+        "title": "Checkboxes - States",
+        "description": "",
+        "name": "selectionControlCheckboxesStates",
+        "path": "@/components/uiElements/selection-controls/checkboxesStates.vue"
+      },
+      {
+        "title": "Checkboxes - Colors",
+        "description": "Checkboxes can be colored by using any of the builtin colors and contextual names using the <code>color</code> prop.",
+        "name": "selectionControlCheckboxesColors",
+        "path": "@/components/uiElements/selection-controls/checkboxesColors.vue"
+      },
+      {
+        "title": "Checkboxes - Inline with a textfield",
+        "description": "",
+        "name": "selectionControlCheckboxesInlineTexfield",
+        "path": "@/components/uiElements/selection-controls/checkboxesInlineTexfield.vue"
+      },
+      {
+        "title": "Radios - Default",
+        "description": "Radio-groups are by default mandatory. This can be changed with the <code>mandatory</code> prop.",
+        "name": "selectionControlRadiosDefault",
+        "path": "@/components/uiElements/selection-controls/radiosDefault.vue"
+      },
+      {
+        "title": "Radios - Direction",
+        "description": "Radio-groups can be presented either as a row or a column, using their respective props. The default is as a column.",
+        "name": "selectionControlRadiosDirection",
+        "path": "@/components/uiElements/selection-controls/radiosDirection.vue"
+      },
+      {
+        "title": "Radios - Colors",
+        "description": "Radios can be colored by using any of the builtin colors and contextual names using the <code>color</code> prop.",
+        "name": "selectionControlRadiosColors",
+        "path": "@/components/uiElements/selection-controls/radiosColors.vue"
+      },
+      {
+        "title": "Switches - Boolean",
+        "description": "",
+        "name": "selectionControlSwitchesBoolean",
+        "path": "@/components/uiElements/selection-controls/switchesBoolean.vue"
+      },
+      {
+        "title": "Switches - Array",
+        "description": "",
+        "name": "selectionControlSwitchesArray",
+        "path": "@/components/uiElements/selection-controls/switchesArray.vue"
+      },
+      {
+        "title": "Switches - States",
+        "description": "",
+        "name": "selectionControlSwitchesStates",
+        "path": "@/components/uiElements/selection-controls/switchesStates.vue"
+      },
+      {
+        "title": "Switches - Colors",
+        "description": "Switches can be colored by using any of the builtin colors and contextual names using the <code>color</code> prop.",
+        "name": "selectionControlSwitchesColors",
+        "path": "@/components/uiElements/selection-controls/switchesColors.vue"
+      },
+      {
+        "title": "Label slot",
+        "description": "Selection controls' labels can be defined in <code>label</code> slot - that will allow to use HTML content.",
+        "name": "selectionControlLabelSlot",
+        "path": "@/components/uiElements/selection-controls/labelSlot.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiSlider",
+    "path": "sliders",
+    "title": "Slider",
+    "type": "formElements",
+    "description": "The <code>v-slider</code> component is a better visualization of the number input. It is used for gathering numerical user data.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "Sliders reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters.",
+        "name": "slidersUsage",
+        "path": "@/components/uiElements/sliders/usage.vue"
+      },
+      {
+        "title": "Thumb",
+        "description": "You can display a <code>thumb-label</code> while sliding or always. It It can have a custom color by setting <code>thumb-color</code> and a custom size with <code>thumb-size</code>. With <code>always-dirty</code> its color will never change, even when on <code>min</code> value.",
+        "name": "slidersThumb",
+        "path": "@/components/uiElements/sliders/thumb.vue"
+      },
+      {
+        "title": "Custom Range slider",
+        "description": "Using the <code>tick-labels</code> prop along with a scoped slot, you can create a very customized solution.",
+        "name": "slidersCustomThumb",
+        "path": "@/components/uiElements/sliders/customThumb.vue"
+      },
+      {
+        "title": "Ticks",
+        "description": "Tick marks represent predetermined values to which the user can move the slider.",
+        "name": "slidersTicks",
+        "path": "@/components/uiElements/sliders/ticks.vue"
+      },
+      {
+        "title": "Discrete",
+        "description": "Discrete sliders offer a thumb label that displays the exact current amount. Using the <code>step</code> prop you can disallow selecting values outside of steps.",
+        "name": "slidersDiscrete",
+        "path": "@/components/uiElements/sliders/discrete.vue"
+      },
+      {
+        "title": "Icons",
+        "description": "You can add icons to the slider with the <code>append-icon</code> and <code>prepend-icon</code> props. With <code>@click:append</code> and <code>@click:prepend</code> you can trigger a callback function when click the icon.",
+        "name": "slidersIcons",
+        "path": "@/components/uiElements/sliders/icons.vue"
+      },
+      {
+        "title": "With an editable numeric value",
+        "description": "Sliders can be combined with other components for a better display.",
+        "name": "slidersEditableNumericValue",
+        "path": "@/components/uiElements/sliders/editableNumericValue.vue"
+      },
+      {
+        "title": "Custom colors",
+        "description": "You can set the colors of the slider using the props <code>color</code>, <code>track-color</code> and <code>thumb-color</code>.",
+        "name": "slidersCustomColors",
+        "path": "@/components/uiElements/sliders/customColors.vue"
+      },
+      {
+        "title": "Validation",
+        "description": "Vuetify includes simple validation through the <code>rules</code> prop. The prop accepts an array of callbacks. While validating rules, the current v-model value will be passed to the callback. This callback should return either <code>true</code> or a <code>String</code>, the error message.",
+        "name": "slidersValidation",
+        "path": "@/components/uiElements/sliders/validation.vue"
+      },
+      {
+        "title": "Range",
+        "description": "Range sliders.",
+        "name": "slidersRange",
+        "path": "@/components/uiElements/sliders/range.vue"
+      },
+      {
+        "title": "Min & Max values",
+        "description": "You can set <code>min</code> and <code>max</code> values of sliders.",
+        "name": "slidersMinMax",
+        "path": "@/components/uiElements/sliders/minMax.vue"
+      },
+      {
+        "title": "Metronome",
+        "description": "Use slotted <i>prepend</i> and <i>append</i> icons to easily customize the <code>v-slider</code> to fit any situation.",
+        "name": "slidersMetronome",
+        "path": "@/components/uiElements/sliders/metronome.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiTextarea",
+    "path": "textarea",
+    "title": "Textarea",
+    "type": "formElements",
+    "description": "Textarea components are used for collecting large amounts of textual data.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "A multi-line text-field is useful for larger amounts of text.",
+        "name": "textareaUsage",
+        "path": "@/components/uiElements/textarea/usage.vue"
+      },
+      {
+        "title": "Auto grow",
+        "description": "Textarea can automatically resize when entered text exceeds its size.",
+        "name": "textareaAutoGrow",
+        "path": "@/components/uiElements/textarea/autoGrow.vue"
+      },
+      {
+        "title": "Beautiful Forms",
+        "description": "Utilizing alternative input styles, you can create amazing interfaces that are easy to build and easy to use.",
+        "name": "textareaSignupBox",
+        "path": "@/components/uiElements/textarea/signupBox.vue"
+      }
+    ]
+  },
+  {
+    "name": "uiTextField",
+    "path": "text-fields",
+    "title": "Text field",
+    "type": "formElements",
+    "description": "Text fields components are used for collecting user provided information.",
+    "sections": [
+      {
+        "title": "Usage",
+        "description": "A simple text field with placeholder and/or label.",
+        "name": "textfieldsUsage",
+        "path": "@/components/uiElements/text-fields/usage.vue"
+      },
+      {
+        "title": "Single line",
+        "description": "Single line text fields do not float their label on focus or with data.",
+        "name": "textfieldsSingleLine",
+        "path": "@/components/uiElements/text-fields/singleLine.vue"
+      },
+      {
+        "title": "Disabled and readonly",
+        "description": "Text fields can be <code>disabled</code> or <code>readonly</code>.",
+        "name": "textfieldsDisabledAndReadonly",
+        "path": "@/components/uiElements/text-fields/disabledAndReadonly.vue"
+      },
+      {
+        "title": "Icons",
+        "description": "You can add icons to the text field with <code>prepend-icon</code>, <code>append-icon</code> and <code>append-outer-icon</code> props.",
+        "name": "textfieldsIcon",
+        "path": "@/components/uiElements/text-fields/icon.vue"
+      },
+      {
+        "title": "Clearable",
+        "description": "When <code>clearable</code>, you can customize the clear icon with <code>clear-icon</code>.",
+        "name": "textfieldsClearable",
+        "path": "@/components/uiElements/text-fields/clearable.vue"
+      },
+      {
+        "title": "Icon events",
+        "description": "<code>click:prepend</code>, <code>click:append</code>, <code>click:append-outer</code>, and <code>click:clear</code> will be emitted when you click on the respective icon. Note that these events will not be fired if the slot is used instead.",
+        "name": "textfieldsIconEvents",
+        "path": "@/components/uiElements/text-fields/iconEvents.vue"
+      },
+      {
+        "title": "Icon slots",
+        "description": "Instead of using prepend / append / append-outer icons you can use slots to extend input's functionality.",
+        "name": "textfieldsIconSlots",
+        "path": "@/components/uiElements/text-fields/iconSlots.vue"
+      },
+      {
+        "title": "Label slots",
+        "description": "Text field label can be defined in label slot - that will allow to use HTML content.",
+        "name": "textfieldsLabelSlot",
+        "path": "@/components/uiElements/text-fields/labelSlot.vue"
+      },
+      {
+        "title": "Character counter",
+        "description": "Use a <code>counter</code> prop to inform a user of the character limit. The counter does not perform any validation by itself. You will need to pair it with either the internal validation system, or a 3rd party library. You can use it on regular, box or outline text fields.",
+        "name": "textfieldsCharacterCounter",
+        "path": "@/components/uiElements/text-fields/characterCounter.vue"
+      },
+      {
+        "title": "Password input",
+        "description": "A password input can be used with an appended icon and callback to control the visibility.",
+        "name": "textfieldsPassword",
+        "path": "@/components/uiElements/text-fields/password.vue"
+      },
+      {
+        "title": "Validation",
+        "description": "Vuetify includes simple validation through the <code>rules</code> prop. The prop accepts an array of callbacks. While validating rules, the current v-model value will be passed to the callback. This callback should return either <code>true</code> or a <code>String</code>, the error message.",
+        "name": "textfieldsValidation",
+        "path": "@/components/uiElements/text-fields/validation.vue"
+      },
+      {
+        "title": "Full-width text field with character counter",
+        "description": "Full width text fields allow you to create boundless inputs. In this example, we use a <code>v-divider</code> to separate the fields.",
+        "name": "textfieldsFullWidthWithCharacterCounter",
+        "path": "@/components/uiElements/text-fields/fullWidthWithCharacterCounter.vue"
+      },
+      {
+        "title": "Hint text",
+        "description": "The <code>hint</code> property on text fields adds the provided string beneath the text field. Using <code>persistent-hint</code> keeps the hint visible when the text field is not focused. Hint prop is not supported in solo mode.",
+        "name": "textfieldsHint",
+        "path": "@/components/uiElements/text-fields/hint.vue"
+      },
+      {
+        "title": "Prefixes & suffixes",
+        "description": "The <code>prefix</code> and <code>suffix</code> properties allows you to prepend and append inline non-modifiable text next to the text field.",
+        "name": "textfieldsPrefixesAndSuffixes",
+        "path": "@/components/uiElements/text-fields/prefixesAndSuffixes.vue"
+      },
+      {
+        "title": "Box style",
+        "description": "Text fields can be used with an alternative box design. Append and prepend icon props are not supported in this mode.",
+        "name": "textfieldsBox",
+        "path": "@/components/uiElements/text-fields/box.vue"
+      },
+      {
+        "title": "Solo style",
+        "description": "Text fields can be used with an alternative solo design.",
+        "name": "textfieldsSolo",
+        "path": "@/components/uiElements/text-fields/solo.vue"
+      },
+      {
+        "title": "Outline style",
+        "description": "Text fields can be used with an alternative outline design.",
+        "name": "textfieldsOutline",
+        "path": "@/components/uiElements/text-fields/outline.vue"
+      },
+      {
+        "title": "Custom colors",
+        "description": "You can optionally change a text field into any color in the Material design palette. Below is an example implementation of a custom form with validation.",
+        "name": "textfieldsCustomColors",
+        "path": "@/components/uiElements/text-fields/customColors.vue"
+      },
+      {
+        "title": "Mask",
+        "description": "Text fields can validate against character masks. Using either a pre-made or custom rules, you can optionally format and validate specific character sets. Note that masks <b>work only with text fields</b>, using them with date/number/file etc inputs may end up in unexpected behaviour or exception.",
+        "name": "textfieldsMasks",
+        "path": "@/components/uiElements/text-fields/masks.vue"
+      },
+      {
+        "title": "Progress bar",
+        "description": "You can display a progress bar instead of the bottom line. You can use the default indeterminate progress having same color as the text field or designate a custom one using the <code>progress</code> slot",
+        "name": "textfieldsProgressBar",
+        "path": "@/components/uiElements/text-fields/progressBar.vue"
+      }
+    ]
+  }
+]

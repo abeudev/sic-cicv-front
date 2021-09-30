@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  web-prod:
+    container_name: web-prod
+    build:
+      context: .
+      dockerfile: ./deploy/dockerfiles/Dockerfile-prod
+    volumes:
+      - '.:/app/client'
+      - '/app/client/node_modules'
+    ports:
+      - '80:80'

@@ -1,0 +1,119 @@
+#genno {
+  .genno-right-drawer {
+    overflow-y: unset;
+    overflow-x: unset;
+    background-color: $wrap-color;
+    box-shadow: inset 19px -7px 35px -13px rgba(230,230,230,1);
+
+    .chat-list {
+      height: 80vh;
+    }
+    .chat-message-list {
+      height: 78vh;
+    }
+    .msg{
+      width:100%;
+      height:auto;
+      display:block;
+      overflow:hidden;
+        
+      .bubble{
+        float:left;
+        max-width: 75%;
+        width: auto;    
+        height: auto;
+        display: block;
+        background: #ebebeb;
+        border-radius: 5px;
+        position: relative;
+        margin: 10px 0 3px 25px;
+        
+        &.alt{
+          margin: 10px 25px 3px 0px;
+          background:#DCF8C6;
+          float:right;
+          &.follow {
+            margin: 2px 25px 3px 0px !important;
+          }
+        }
+        &.follow{
+          margin: 2px 0 3px 25px;
+        }
+        .txt{
+          padding: 8px 0 8px 0;
+          width:100%;
+          .name{
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-table;
+            padding: 0 0 0 15px;
+            margin: 0 0 4px 0;
+            color: #3498db;
+            span{
+              font-weight: normal;
+              color: #b3b3b3;
+              overflow: hidden;
+            }
+            &.alt{
+              color: #2ecc51;
+            }        
+          }
+          .message{
+            font-size: 14px;
+            padding: 0 15px 0 15px;
+            margin: auto;
+            display: table;
+          }
+          .timestamp{
+            font-size: 11px;
+            margin: auto;
+            padding: 0 15px 0 0;
+            display: table;
+            float:right;
+            position: relative;
+            text-transform: uppercase; 
+            color: #999
+          }
+        }
+        .bubble-arrow {
+          position: absolute;
+          float:left;
+          left: -11px;
+          top: 0px;
+          &.alt{
+            bottom: 20px;
+            left: auto;
+            right: 4px;
+            float:right;
+          }
+        }
+        .bubble-arrow:after {
+          content: "";
+          position: absolute;
+          border-top: 15px solid #ebebeb;
+          border-left: 15px solid transparent;           
+          border-radius: 4px 0 0 0px;
+          width: 0;
+          height: 0;
+        }
+        .bubble-arrow.alt:after {
+          border-top: 15px solid #DCF8C6;
+          transform: scaleX(-1);
+        }
+      }
+    }
+    .footer {
+      height: 68px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: $wrap-color;
+      box-shadow: inset 19px -7px 35px -13px rgba(230,230,230,1);
+      .v-text-field {
+        input {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

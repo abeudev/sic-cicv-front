@@ -1,0 +1,46 @@
+#genno {
+  .gon-table-toolbar {
+    .v-input--switch {
+      .v-input__slot {
+        margin-top: 9px;
+        margin-bottom: 0;
+      }
+    }
+    .v-input__icon--clear {
+      .mdi-close::before {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .gon-search {
+    .v-input__control {
+      min-height: auto;
+      .v-input__slot {
+        box-shadow: none;
+        border: solid 1px $border-gray-2;
+        background-color: transparent;
+        border-radius: 30px;
+        margin: 8px 0;
+        font-size: 14px;
+      }
+      label {
+        font-size: 14px;
+      }
+    }
+  }
+  .gon-btn {
+    border-radius: 30px;
+    height: 30px;
+    text-transform: capitalize;
+  }
+  .gon-table {
+    .v-table, .v-datatable__actions {
+      background: transparent;
+    }
+  }
+  .gon-list {
+    .v-list__tile__action {
+      min-width: 37px;
+    }
+  }
+}

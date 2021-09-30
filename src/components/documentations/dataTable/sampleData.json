@@ -1,0 +1,35 @@
+[
+  {
+    "firstName": "Mami",
+    "username": "mami",
+    "email": "mami@mail.com",
+    "role": {
+      "name": "Admin"
+    },
+    "createdAt": 1570640233376,
+    "_id": "5d9e116520454003c34f3448",
+    "lastName": "Sasazaki"
+  },
+  {
+    "firstName": "Haruna",
+    "username": "haruna",
+    "email": "haruna@gmail.com",
+    "role": {
+      "name": "Admin"
+    },
+    "createdAt": 1570638828640,
+    "_id": "5d9e0beb20454003c34f3442",
+    "lastName": "Ono"
+  },
+  {
+    "firstName": "Enzo",
+    "username": "enzo",
+    "email": "enzo.zine@gmail.com",
+    "role": {
+      "name": "Admin"
+    },
+    "createdAt": 1570631145774,
+    "_id": "5d9dede520454003c34f343c",
+    "lastName": "Zine"
+  }
+]

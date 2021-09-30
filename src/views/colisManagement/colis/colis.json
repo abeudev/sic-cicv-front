@@ -1,0 +1,203 @@
+{
+    "filter": {
+        "$match": {
+            "isActive": true
+        }
+    },
+    "datatable": {
+        "columns": [
+            {
+                "data": "name",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "track_number",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "withdrawal_code",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "transaction_ID",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "payment_status",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "arrival_place",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "departure_customer_ID",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "arrival_customer_ID",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "transaction_status",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "delivery",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "delivery_place",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "delivery_date",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "delivery_startTime",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "delivery_endTime",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "description",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "isActive",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "createdAt",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            },
+            {
+                "data": "_id",
+                "searchable": true,
+                "orderable": true,
+                "name": "",
+                "search": {
+                    "value": "",
+                    "regex": false
+                }
+            }
+        ],
+        "order": [
+            {
+                "column": 16,
+                "dir": "desc"
+            }
+        ],
+        "start": 0,
+        "length": 25,
+        "search": {
+            "value": "",
+            "regex": false
+        }
+    }
+}

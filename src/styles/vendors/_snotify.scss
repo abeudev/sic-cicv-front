@@ -1,0 +1,16 @@
+#genno {
+  .snotifyToast__body {
+    &.error-msg:first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  .snotifyToast__title {
+    font-size: 1.4em;
+  }
+  
+  .snotify-icon {
+    max-height: 30px;
+    max-width: 36px;
+  }
+}
